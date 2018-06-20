@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PHA Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+  </head>
+
+  <body>
+    <div class="landing">
+      <div class="customnav">
+        <div class="topbox animated fadeInDown">
+        </div>
+        <div id="loadbar" class="topboxload">
+        </div>
+        <div class="container marginnav">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 navelementcontainer">
+              <div>
+                <span id="element1" class="elemlink"><a href="https://gatconsulting.org">GAT Consulting</a></span>
+                <span id="element2" class="elemlink"><a href="http://www.pha.gop.pk/">Parks & Horticulture Authority</a></span>
+              </div>
+              <div class="logos" style="position: absolute; left: 50%">
+                <div style="position: relative; left: -50%">
+                  <img id="gatlogo" src="./resources/gat.svg"></img>
+                  <img id="phalogo" src="./resources/pha.svg"></img>
+                </div>
+              </div>
+              <div style="position: absolute; right: 0; color: #2196F3; margin-right: 10px">
+                <span id="getstarted">Get Started <i id="arrow" class="fas fa-arrow-circle-down"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div id="leftside">
+          <img id="tree" src="./resources/tree.svg"></img>
+          <div class="insightcontain">
+            <p class="gatname">INSIGHTS: 2017 - 2018</p>
+            <h4 id="insight">1453 PHA additional staff registered</h4>
+          </div>
+        </div>
+        <div id="rightside">
+          <div class = "imageContain" id="image1">
+            <div class="overlay">
+            </div>
+          </div>
+          <div class = "imageContain" id="image2">
+            <div class="overlay">
+            </div>
+          </div>
+          <div class = "imageContain" id="image3">
+            <div class="overlay">
+            </div>
+          </div>
+          <div class = "imageContain" id="image4">
+            <div class="overlay">
+            </div>
+          </div>
+          <div class = "imageContain" id="image5">
+            <div class="overlay">
+            </div>
+          </div>
+      </div>
+    </div>
+
+<!--    <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 picturecontainer" id="photoslider1">
+            <div class="avatar show"><img class="avatarimage" src="./resources/pic.jpg"></img></div>
+            <div class="avatar"><img class="avatarimage" src="./resources/pic2.jpg"></img></div>
+            <div class="avatar"><img class="avatarimage" src="./resources/pic.jpg"></img></div>
+            <div class="avatar"><img class="avatarimage" src="./resources/pic2.jpg"></img></div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 picturecontainer">
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 picturecontainer">
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 picturecontainer">
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row" style="position: relative; z-index: 1;">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 half">
+            <img id="gatfootlogo" src="./resources/gat.svg"></img>
+            <p class="footerdepartmentname">GAT Consulting (Pvt.) Ltd</p>
+            <p><i class="fab fa-linkedin-in social" id="left"></i><i class="fab fa-twitter social" id="right"></i></p>
+            <p class="info"><i class="fas fa-map-marker"style="padding-right: 10px; font-size: 18px"></i>3-Shahrah-e-Aiwan-e-Tijarat, China Chowk, Lahore 54000</p>
+            <p class="info"><i class="fas fa-phone" style="padding-right: 10px; font-size: 18px"></i>+92 42 37500724</p>
+            <p class="info"><i class="far fa-envelope" style="padding-right: 10px; font-size: 18px"></i>contact@gatconsultancy.com</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 half">
+            <img id="phafootlogo" src="./resources/pha.svg"></img>
+            <p class="footerdepartmentname">Parks & Horticulture Authority Lahore</p>
+            <p><i class="fab fa-facebook-f social" id="left"></i><i class="fab fa-twitter social" id="middle"></i><i class="fab fa-instagram social" id="right"></i></p>
+            <p class="info"><i class="fas fa-map-marker" style="padding-right: 10px; font-size: 18px"></i>Gate No-4 Jillani Park, 2 Jail Rd, Lahore 54000</p>
+            <p class="info"><i class="fas fa-phone" style="padding-right: 10px; font-size: 18px"></i>+92 42 99200830 | +92 42 99200908</p>
+            <p class="info"><i class="far fa-envelope" style="padding-right: 10px; font-size: 18px"></i>contact@pha.gop.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footeroverlay">
+      </div>
+      <div class="whitefooter">
+        <span style="margin-top: 1rem">© 2018 GAT Consulting. All Rights Reserved.</span>
+        <span style="margin-top: 1rem">Designed and Developed by Plotree Info Design.</span>
+      </div>
+    </footer>
+
+    <script>
+
+      $("#getstarted").mouseenter(function() {
+          $('#arrow').addClass('yellow');
+      }).mouseleave(function() {
+          $('#arrow').removeClass('yellow');
+      });
+
+      setTimeout(function () {
+        $('#element1').show().addClass('animated fadeIn');}, 400
+      );
+
+      setTimeout(function () {
+        $('#element2').show().addClass('animated fadeIn');}, 900
+      );
+
+      setTimeout(function () {
+        $('#getstarted').show().addClass('animated fadeIn');}, 1500
+      );
+
+      setTimeout(function () {
+        $('.logos').show().addClass('animated fadeInDown logos');}, 1900
+      );
+
+      var timeOnEachText = 2000; // Milliseconds to spend on each before moving to next
+
+      var text = ['6790 active staff members', '733 dormant employees', '200,258 field activities', '1453 PHA additional staff registered'];
+      var counter = 0;
+      var elem = document.getElementById("insight");
+      function change() {
+        jQuery(elem).delay(timeOnEachText).fadeTo(1200, 0, function() {
+          this.innerHTML = text[counter];
+          counter = ++counter % text.length;
+          jQuery(this).fadeTo(1200, 1, change)
+        })
+      }
+      change();
+
+    </script>
+  </body>
+  </html>
