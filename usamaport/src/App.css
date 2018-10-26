@@ -332,6 +332,21 @@ html, body {
   }
 }
 
+.avatarContain {
+  margin-left: calc(50% - 100px);
+}
+
+.avatarInfoContain {
+  margin-top: 50px;
+}
+
+.avatarInfo {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 991px) {
   .linksSection {
     margin-top: 15px;
@@ -340,12 +355,14 @@ html, body {
     margin: 10px 0px;
   }
 
+  .avatarContain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
   .homePortHeight {
     height: auto;
-  }
-
-  .avatar {
-    margin-top: 85px;
   }
 }
 
@@ -353,12 +370,6 @@ html, body {
   .avatar {
     margin-top: 30px;
     max-width: 300px;
-  }
-
-  .avatarContain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -484,6 +495,10 @@ html, body {
   border-radius: 10px;
   padding-top: 10px;
   border-color: #e0e0e0;
+}
+
+.insightContain:nth-of-type(4n) {
+  color: #7CB342;
 }
 
 .aboutListItem {

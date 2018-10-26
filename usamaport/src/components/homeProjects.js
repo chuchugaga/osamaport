@@ -54,6 +54,9 @@ class HomeProjects extends Component {
                       </div>
                       <p className={classnames('homeProjTitle', portfolioItem.ClassName)}>{portfolioItem.title}</p>
                       <p className={classnames('homeProjClient', portfolioItem.ClassName)}>Client: {portfolioItem.client}</p>
+                      <div>
+                        <p className="homeProjDesc">{portfolioItem.description}</p>
+                      </div>
                     </div>
                   </div>
                 </Col>
